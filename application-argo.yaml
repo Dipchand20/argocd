@@ -4,7 +4,7 @@ metadata:
   name: myapp-argo-application
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: dipchand20/flask-hello-world:~v0.1.x
+    argocd-image-updater.argoproj.io/image-list: dipchand20/flask-hello-world:^0.3
     argocd-image-updater.argoproj.io/flask-hello-world.update-strategy: semver
     argocd-image-updater.argoproj.io/write-back-method: git
     #   argocd-image-updater.argoproj.io/myimage.allow-tags: regexp:^[0-9a-f]{4}$
