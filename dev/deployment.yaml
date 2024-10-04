@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: flask-container
-          image: dipchand20/flask-hello-world:v0.1.1
+          image: vikasy/flask-app:0.3.0
           ports:
             - containerPort: 5000
       imagePullSecrets:
-        - name: dockerhub-secret1
+        - name: dockerhub-vikas-credentials
